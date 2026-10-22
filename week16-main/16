@@ -1,0 +1,57 @@
+# WEEK 16: PROMPT EVALUATION & ETHICS WORKSHOP
+ 
+print("===== WEEK 16: PROMPT EVALUATION & ETHICS =====")
+ 
+prompt = """
+Explain Artificial Intelligence to a beginner
+in simple English with 3 real-world examples.
+"""
+ 
+response = """
+Artificial Intelligence is the ability of machines
+to perform tasks that normally require human intelligence.
+ 
+Examples:
+1. Voice assistants
+2. Recommendation systems
+3. Self-driving cars
+"""
+ 
+print("\n--- PROMPT ---")
+print(prompt)
+ 
+print("\n--- RESPONSE ---")
+print(response)
+ 
+criteria = {
+    "Accuracy": 5,
+    "Relevance": 5,
+    "Clarity": 5,
+    "Completeness": 4,
+    "Format Compliance": 5
+}
+ 
+print("\n--- PROMPT EVALUATION ---")
+ 
+total = 0
+ 
+for criterion, score in criteria.items():
+    print(f"{criterion}: {score}/5")
+    total += score
+ 
+average = total / len(criteria)
+ 
+print("\nAverage Score:", average, "/5")
+ 
+print("\n--- ETHICS CHECK ---")
+ 
+ethics = {
+    "Bias": "No obvious bias detected",
+    "Privacy": "No personal information used",
+    "Safety": "Safe content",
+    "Transparency": "Response is clear",
+    "Hallucination Risk": "Low"
+}
+ 
+for issue, result in ethics.items():
+    print(f"{issue}: {result}")
